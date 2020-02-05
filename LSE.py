@@ -10,14 +10,14 @@ from datetime import datetime
 
 #Add Keyword
 keyWord = "xceed"
-keyWord2 = "head of expect"
+keyWord2 = "ahead of expect"
 #link to the LSE RNS and keyword. Main page needed to concatenate onto relative links. News page can be changed to filter specific types or markets.
 mainPage = "https://www.londonstockexchange.com"
 
 #Logging Settings
 now = datetime.now()
 dt_string = now.strftime("%Y-%m-%d %H%M")
-logFileName = "LSE_"+dt_string+'_'+keyWord+'.log'
+logFileName = "LSE_"+dt_string+'_'+keyWord+"_"+keyWord2+'.log'
 logging.basicConfig(level=logging.INFO, filename=logFileName, filemode='w', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
 
 #define scraping function
