@@ -28,11 +28,11 @@ Once the script has been run you can open the log file and click through the lin
   
   5) email the file out at say 6:30, 12:00 and 16:00 every weekday with the results
   
-## Final Note
+## Note
 
 I am a relativley basic Python user who mostly uses python as a Spatial ETL tool. My experience of web scraping is limited. If you feel I've done something wrong or you have ideas to improve the script please let me know. Suggestions and feedback are welcome.
 
-## One final Cautinary note you should definitley read before trading
+## One final cautionary note you should definitley read before trading! (I'm serious...)
 
 DON'T JUST TRADE BLINDLY! check the output and make sure the results stack up. For example a link was returned to IMB on 05.02.2020 which had the keyword exceeding in the cautinary note. It was a catastrophic trading update which resulted in a 10% drop. But every other stock returned that day rose between 2% an 7% in the first two hours of trading. It was very obvious upon reading the article. Just check before you buy!
 
