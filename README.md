@@ -10,11 +10,24 @@ If you found this through one of my posts on a bulletin board or forum and you d
 
 ## Information
 
-Libraries required are bs4, urlib, re, datetime and logging. I can't remember which are installed as standard. 
-
-Running will create a log file of the same name in the same directory with the date/time and keywords appended. It will contain a list of URL links by market (FTSE100, FTSE250 and FTSE AIM) to the news stories in the LSE RNS feed which contain the keyword entered at the top of the script. These are currently set to keyword = "xceed" for exceed or exeeding and keyword2 = "head of expect" for ahead of expectations.
+Running the script will create a log file of the same name in the same directory with the date/time and keywords appended. It will contain a list of URL links by market (FTSE100, FTSE250 and FTSE AIM) to the news stories in the LSE RNS feed which contain the keyword entered at the top of the script. These are currently set to keyword = "xceed" for exceed or exeeding and keyword2 = "head of expect" for ahead of expectations.
 
 Once the script has been run you can open the log file and click through the links to assess each RNS story which contains the given keywords. Easy research!
+
+Libraries required are bs4, urllib, re, datetime and logging. I can't remember which are installed as standard. 
+
+## Python Version
+
+I wrote this in Python 2.7 (ArcGIS user). It's more or less compatible with Python 3. The only thing you'll need to do is change:
+
+"import urllib"
+
+to:
+
+"from urllib.requests import urlopen"
+
+then just find and replace "urllib.urlopen" to just "urlopen"
+
 
 ## Future plans 
 
