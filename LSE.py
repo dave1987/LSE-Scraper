@@ -35,24 +35,20 @@ def LSEScrape(newsPage):
             pageSub = urllib.urlopen(mainPage+linkString).read()
             soupSub = BeautifulSoup(pageSub)
             soupSub = str(soupSub)
-            if soupSub.find(keyWord) or soupSub.find(keyWord2) > -1:
+            if soupSub.find(keyWord) > -1 or soupSub.find(keyWord2)  > -1 and mainPage+linkString!='https://www.londonstockexchange.com':
                 logging.warning(mainPage+linkString)
 
 
 logging.info("Scraping FTSE 100")
-newsPage = urllib.urlopen("https://www.londonstockexchange.com/exchange/news/market-news/market-news-home.html?nameCodeText=&searchType=searchForNameCode&nameCode=&text=&rnsSubmitButton=Search&activatedFilters=true&newsSource=ALL&mostRead=&headlineCode=NONE&headlineId=&ftseIndex=UKX&sectorCode=&rbDate=released&preDate=Today&newsPerPage=500").read()
+newsPage = urllib.urlopen("https://www.londonstockexchange.com/exchange/news/market-news/market-news-home.html?nameCodeText=&searchType=searchForNameCode&nameCode=&text=&rnsSubmitButton=Search&activatedFilters=true&newsSource=ALL&mostRead=&headlineCode=ONLY_EARNINGS_NEWS&headlineId=&ftseIndex=UKX&sectorCode=&rbDate=released&preDate=Today&newsPerPage=500").read()
 LSEScrape(newsPage=newsPage)
 
 logging.info("Scraping FTSE 250")
-newsPage = urllib.urlopen("https://www.londonstockexchange.com/exchange/news/market-news/market-news-home.html?nameCodeText=&searchType=searchForNameCode&nameCode=&text=&rnsSubmitButton=Search&activatedFilters=true&newsSource=ALL&mostRead=&headlineCode=NONE&headlineId=&ftseIndex=MCX&sectorCode=&rbDate=released&preDate=Today&newsPerPage=500").read()
+newsPage = urllib.urlopen("https://www.londonstockexchange.com/exchange/news/market-news/market-news-home.html?nameCodeText=&searchType=searchForNameCode&nameCode=&text=&rnsSubmitButton=Search&activatedFilters=true&newsSource=ALL&mostRead=&headlineCode=ONLY_EARNINGS_NEWS&headlineId=&ftseIndex=MCX&sectorCode=&rbDate=released&preDate=Today&newsPerPage=500").read()
 LSEScrape(newsPage=newsPage)
  
-logging.info("Scraping FTSE 350")
-newsPage = urllib.urlopen("https://www.londonstockexchange.com/exchange/news/market-news/market-news-home.html?nameCodeText=&searchType=searchForNameCode&nameCode=&text=&rnsSubmitButton=Search&activatedFilters=true&newsSource=ALL&mostRead=&headlineCode=NONE&headlineId=&ftseIndex=NMX&sectorCode=&rbDate=released&preDate=Today&newsPerPage=500").read()
-LSEScrape(newsPage=newsPage)
-
 logging.info("Scraping FTSE AIM")
-newsPage = urllib.urlopen("https://www.londonstockexchange.com/exchange/news/market-news/market-news-home.html?nameCodeText=&searchType=searchForNameCode&nameCode=&text=&rnsSubmitButton=Search&activatedFilters=true&newsSource=ALL&mostRead=&headlineCode=NONE&headlineId=&ftseIndex=AXX&sectorCode=&rbDate=released&preDate=Today&newsPerPage=500").read()
+newsPage = urllib.urlopen("https://www.londonstockexchange.com/exchange/news/market-news/market-news-home.html?nameCodeText=&searchType=searchForNameCode&nameCode=&text=&rnsSubmitButton=Search&activatedFilters=true&newsSource=ALL&mostRead=&headlineCode=ONLY_EARNINGS_NEWS&headlineId=&ftseIndex=AXX&sectorCode=&rbDate=released&preDate=Today&newsPerPage=500").read()
 LSEScrape(newsPage=newsPage)
 
 #END
