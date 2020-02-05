@@ -9,7 +9,7 @@ Future plans for this script are to:
 
   1) ~seperate results by market (AIM, FTSE100 etc) and save URLs to a file.~
   
-  2) add multiple keywords
+  2) ~add multiple keywords~
   
   3) Schedule to run regularly and pick up all stories as they come out
   
