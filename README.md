@@ -15,3 +15,8 @@ Future plans for this script are to:
   
   
 Note: I am an amateur Python user who mostly uses python as a Spatial ETL tool. My experience of web scraping is limited. Suggestions and feedback are welcome.
+
+
+Edit 05/02/2020
+
+I have added logging and sperate sections for different markets
