@@ -4,7 +4,7 @@ Scrapes keywords from LSE RNS Feed
 
 ## Background
 
-The story behind this is that I like to trade on good news. I'm not a fan of chartist theory. Although I know it works for a lot of people I find it tiresome. I like to see a company doing well and invest over short/medium term. That's always been the way I've picked stocks and so far so good! The trouble is that I spend a lot of time going through the RNS feed in the morning to find good news in trading updates and company results. Anyone who has done this knows it takes a lot of time, early in the morning. Wouldn't it be great if I autmatically knew which stories contained good news? Wouldn't it be great if I could make a quick assessment of the morning RNS feed leaving myself plenty of time to do some due dilligence and choose whether to jump on for a quick ride to profit town? I wrote this script to make that process as easy as possible. I'm going to paper trade it for the first week or so and see how it goes.
+The story behind this is that I like to trade on good news. I'm not a fan of chartist theory. Although I know it works for a lot of people I find it tiresome. I like to see a company doing well and invest over short/medium term. That's always been the way I've picked stocks and so far so good! The trouble is that I spend a lot of time going through the RNS feed in the morning to find good news in trading updates and company results. Anyone who has done this knows it takes a lot of time, early in the morning. Wouldn't it be great if I automatically knew which stories contained good news? Wouldn't it be great if I could make a quick assessment of the morning RNS feed leaving myself plenty of time to do some due dilligence and choose whether to jump on for a quick ride to profit town? I wrote this script to make that process as easy as possible. I'm going to paper trade it for the first week or so and see how it goes.
 
 If you found this through one of my posts on a bulletin board or forum and you don't know how to use python get in touch. This is super easy to use. I'd be happy to help you get up and running with it.
 
@@ -14,7 +14,7 @@ Libraries required are bs4, urlib, re, datetime and logging. I can't remember wh
 
 Running will create a log file of the same name in the same directory with the date/time and keywords appended. It will contain a list of URL links by market (FTSE100, FTSE250 and FTSE AIM) to the news stories in the LSE RNS feed which contain the keyword entered at the top of the script. These are currently set to keyword = "xceed" for exceed or exeeding and keyword2 = "head of expect" for ahead of expectations.
 
-Once run you can open the log file and click through the links to assess each RNS story which contains the given keywords. 
+Once the script has been run you can open the log file and click through the links to assess each RNS story which contains the given keywords. Easy research!
 
 ## Future plans 
 
@@ -30,10 +30,10 @@ Once run you can open the log file and click through the links to assess each RN
   
 ## Final Note
 
-I am a relativley basic Python user who mostly uses python as a Spatial ETL tool. My experience of web scraping is limited. If you feel I've done something wrong or you have ideas to improve the script suggestions and feedback are welcome.
+I am a relativley basic Python user who mostly uses python as a Spatial ETL tool. My experience of web scraping is limited. If you feel I've done something wrong or you have ideas to improve the script please let me know. Suggestions and feedback are welcome.
 
 ## One final Cautinary note you should definitley read before trading
 
-DON'T JUST TRADE BLINDLY! check the output and make sure they stack up. For example a link was returned to IMB on 05.02.2020 which has the keyword exceeding in the cautinary note. It was a catastrophic trading update which resulted in a 10% drop. But every other stock returned that day rose between 2% an 7% in the first two hours of trading. Just check before you buy!
+DON'T JUST TRADE BLINDLY! check the output and make sure the results stack up. For example a link was returned to IMB on 05.02.2020 which had the keyword exceeding in the cautinary note. It was a catastrophic trading update which resulted in a 10% drop. But every other stock returned that day rose between 2% an 7% in the first two hours of trading. It was very obvious upon reading the article. Just check before you buy!
 
-Stocks can rise and fall blah blah blah. I am not repsonsible for your lack of research and due dilligence! Corporations can be highly optimistic and always talk themselves up to the maximum extent that is legallaly permissible. If you are going to trade on good news be 100% sure that it is good news before buying. Do your own research and stay cynical!
+Stocks can rise and fall blah blah blah. I am not repsonsible for your lack of research and/or due dilligence! Corporations can be highly optimistic and always talk themselves up to the maximum extent that is legallaly permissible. If you are going to trade on good news be 100% sure that it is good news before buying. Do your own research and stay cynical!
