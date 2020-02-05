@@ -9,7 +9,8 @@ from datetime import datetime
 #START
 
 #Add Keyword
-keyWord = "solid"
+keyWord = "xceed"
+keyWord2 = "head of expect"
 #link to the LSE RNS and keyword. Main page needed to concatenate onto relative links. News page can be changed to filter specific types or markets.
 mainPage = "https://www.londonstockexchange.com"
 
@@ -34,7 +35,7 @@ def LSEScrape(newsPage):
             pageSub = urllib.urlopen(mainPage+linkString).read()
             soupSub = BeautifulSoup(pageSub)
             soupSub = str(soupSub)
-            if soupSub.find(keyWord) > -1:
+            if soupSub.find(keyWord) or soupSub.find(keyWord2) > -1:
                 logging.warning(mainPage+linkString)
 
 
