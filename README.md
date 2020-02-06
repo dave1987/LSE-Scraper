@@ -52,6 +52,9 @@ DON'T JUST TRADE BLINDLY! check the output and make sure the results stack up. F
 Stocks can rise and fall blah blah blah. I am not repsonsible for your lack of research and/or due dilligence! Corporations can be highly optimistic and always talk themselves up to the maximum extent that is legallaly permissible. If you are going to trade on good news be 100% sure that it is good news before buying. Do your own research and stay cynical!
 
 
-## Log
+## Paper trade log
 
-06/02/20 OTMP at 80p
+I'm going to be noting down a week's worth of paper trading to gauge how useful this is. Starting Thursday. Expecting better results Mon-Wed because that's when good news tends to land. 
+
+Thursday - 06/02/20 - OTMP at 80p 1500ems = £1200 investment. Update claiming new monthly record was set for website traffic. Sold @ 79p for about £30 loss with fees). 
+
