@@ -50,3 +50,8 @@ I am a relativley basic Python user who mostly uses python as a Spatial ETL tool
 DON'T JUST TRADE BLINDLY! check the output and make sure the results stack up. For example a link was returned to IMB on 05.02.2020 which had the keyword exceeding in the cautinary note. It was a catastrophic trading update which resulted in a 10% drop. But every other stock returned that day rose between 2% an 7% in the first two hours of trading. It was very obvious upon reading the article. Just check before you buy!
 
 Stocks can rise and fall blah blah blah. I am not repsonsible for your lack of research and/or due dilligence! Corporations can be highly optimistic and always talk themselves up to the maximum extent that is legallaly permissible. If you are going to trade on good news be 100% sure that it is good news before buying. Do your own research and stay cynical!
+
+
+## Log
+
+06/02/20 OTMP at 80p
